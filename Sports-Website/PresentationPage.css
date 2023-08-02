@@ -1,0 +1,55 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+.content-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 10px;
+    align-items: center;
+    height: 90vh;
+}
+
+.sport_logo img{
+    width: 300px;
+    margin-right: -200px;
+    height: auto;
+}
+#timer {
+    color: white;
+    margin-top: -40px;
+    text-align: right;
+}
+.content-grid div{
+    width: 500px;
+}
+
+.sport_logo{
+    text-align: right;
+}
+.text-lightgreen {
+    color: rgb(100, 100, 100);
+    margin-top: -20px;
+}
+.text-lightblue {
+    color: rgb(165, 164, 164);
+    margin-top: -60px;
+}
+.team {
+    color: white;
+    text-align: center;
+    margin-top: 10px;
+    width: 410px;
+    height: 200px;
+    padding-top: 20px;
+}
+h5 {
+    font-family: Arial;
+}
+h2 {
+    margin-bottom: 40px;
+}
+.title {
+    margin-bottom: 10px;
+    color: rgb(178, 178, 179);
+}

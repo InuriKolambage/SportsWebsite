@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width-device-width,initial-scale-1.0">
+  <title>Image Gallery</title>
+  <link rel="stylesheet" href="ImageGallery.css">
+</head>
+<body class="default-background" id="body">
+<!---nav bar--->
+<nav class="nav-outer">
+  <ul>
+    <li><a href="MainPage.html">Home</a></li>
+    <li><a href="Comments.html">Comments</a></li>
+    <li><a href="buy_products.html">Shop</a></li>
+    <li><a href="Quiz.html">Quiz</a></li>
+    <li><a href="ImageGallery.html">Gallery</a></li>
+    <li><a href="SiteMap.html">Site Map</a></li>
+    <li><a href="AboutUs.html">About Us</a></li>
+  </ul>
+
+</nav>
+<!---nav bar--->
+
+
+<br>
+
+<div class="options">
+  <h3>color </h3>
+  <div class="color-option">
+    <select name="color" id="color" class="color-selector" onchange="colorTheme(this.value, document.getElementById('font').value)">
+      <option value="default" disabled selected>choose color</option>
+      <option value="red">red</option>
+      <option value="blue">blue</option>
+      <option value="green">green</option>
+    </select>
+  </div>
+
+  <h3>font size </h3>
+  <div class="font-option">
+    <select name="font" id="font" class="font-selector" onchange="fontSize(this.value,document.getElementById('color').value)">
+      <option value="small">small</option>
+      <option value="medium" selected>medium</option>
+      <option value="large">large</option>
+    </select>
+  </div>
+</div>
+<div class="container">
+  <div class="cards">
+    <div class="card cricket">
+      <div class="colour"></div>
+      <div class="card-text">
+        <h3>cricket</h3>
+        <p>Cricket is a popular sport that originated in England and is now enjoyed by millions of fans worldwide.</p>
+      </div>
+      <div class="colour-bottom"></div>
+    </div>
+    <div class="card football">
+      <div class="colour"></div>
+      <div class="card-text">
+        <h3>football</h3>
+        <p>It is a game of 90 minutes. There are two teams. Each team can have a maximum of 11 players and a minimum of 7 players. There are two goalposts. </p>
+      </div>
+      <div class="colour-bottom"></div>
+    </div>
+    <div class="card netball">
+      <div class="colour"></div>
+      <div class="card-text">
+        <h3>Basketball</h3>
+        <p>Basketball, extremely popular around the world, is a court game played by two teams of five players each. </p>
+      </div>
+      <div class="colour-bottom"></div>
+    </div>
+    <div class="card boxing">
+      <div class="colour"></div>
+      <div class="card-text">
+        <h3>Boxing</h3>
+        <p>Boxing is a sport that involves two athletes fighting each other, trying to punch their opponent with padded gloves on their fists.</b></p>
+      </div>
+      <div class="colour-bottom"></div>
+    </div>
+  </div>
+
+</div>
+<!---footer--->
+<footer>
+  <p>&copy; 2023 SportsHub. All rights reserved.</p>
+  <ul>
+    <li><a href="PageEditor_student4.html">Content Page</a></li>
+
+  </ul>
+</footer>
+
+<!---footer--->
+<script src="ImageGallery.js"></script>
+</body>
+</html>

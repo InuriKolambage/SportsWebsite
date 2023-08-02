@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="buy_products.css">
+  <link rel="icon" href="Student-1/sport.png" type="image/png">
+  <script src="buy_products.js"></script>
+  <title>SportHub | Products</title>
+</head>
+<body>
+<!---nav bar--->
+<nav class="nav-outer">
+  <ul>
+    <li><a href="MainPage.html">Home</a></li>
+    <li><a href="Comments.html">Comments</a></li>
+    <li><a href="buy_products.html">Shop</a></li>
+    <li><a href="Quiz.html">Quiz</a></li>
+    <li><a href="ImageGallery.html">Gallery</a></li>
+    <li><a href="SiteMap.html">Site Map</a></li>
+    <li><a href="AboutUs.html">About Us</a></li>
+  </ul>
+
+</nav>
+<!---nav bar--->
+
+<img class="logo" src="Student-1/sport.png" alt="Logo">
+<h4 class="logo_topic">SportHub</h4>
+<img class = "head_img" src="Student-1/sport1.jpg" alt="header image">
+<div class="head">
+  <h1 class="topic">SportHub Products</h1>
+</div>
+
+<div class="checkout-button pointer" onclick="opencheckout('#order')">
+  <img src="Student-1/cart.png" alt="cart button">
+  <span id="items_in_cart"></span>
+</div>
+<h3 id="shop">Shop Now</h3>
+<div id="shop_section">
+  <section id="sport_products" class="shop_items">
+    <h4 class="h4_topic">Best Products for Best Price</h4>
+
+    <div class="items">
+      <div class="shop_item">
+        <img src="Student-1/Ball1.jpg" alt="Football">
+        <span class="item_name">Football</span>
+        <span class="item_price">LKR 5000.00</span>
+        <div class="price_Container">
+          <label class="quantity">Quantity
+            <input id="1_quantity" type="number" min="1" max="10" value="1">
+          </label>
+          <button id="1_item" data-itemname="Football" data-price="5000" class="add_to_cart" onclick="AddToCart(this.id)">
+            <span>Add to cart</span>
+            <i class="S_icon" style="vertical-align: middle;"></i>
+          </button>
+        </div>
+      </div>
+
+      <div class="shop_item">
+        <img src="Student-1/c_ball.jpg" alt="Leather Ball">
+        <span class="item_name">Leather Ball</span>
+        <span class="item_price">LKR 2500.00</span>
+        <div class="price_Container">
+          <label class="quantity">Quantity
+            <input id="2_quantity" type="number" min="1" max="10" value="1">
+          </label>
+          <button id="2_item" data-itemname="Leather Ball" data-price="2500" class="add_to_cart" onclick="AddToCart(this.id)">
+            <span>Add to cart</span>
+            <i class="S_icon" style="vertical-align: middle;"></i>
+          </button>
+        </div>
+      </div>
+
+      <div class="shop_item">
+        <img src="Student-1/bat.jpg" alt="Bat">
+        <span class="item_name">Bat</span>
+        <span class="item_price">LKR 3000.00</span>
+        <div class="price_Container">
+          <label class="quantity">Quantity
+            <input id="3_quantity" type="number" min="1" max="10" value="1">
+          </label>
+          <button id="3_item" data-itemname="Bat" data-price="3000" class="add_to_cart" onclick="AddToCart(this.id)">
+            <span>Add to cart</span>
+            <i class="S_icon" style="vertical-align: middle;"></i>
+          </button>
+        </div>
+      </div>
+
+      <div class="shop_item">
+        <img src="Student-1/bp3.jpg" alt="Boxing Gloves">
+        <span class="item_name">Boxing Gloves</span>
+        <span class="item_price">LKR 3500.00</span>
+        <div class="price_Container">
+          <label class="quantity">Quantity
+            <input id="4_quantity" type="number" min="1" max="10" value="1">
+          </label>
+          <button id="4_item" data-itemname="Boxing Gloves" data-price="3500" class="add_to_cart" onclick="AddToCart(this.id)">
+            <span>Add to cart</span>
+            <i class="S_icon" style="vertical-align: middle;"></i>
+          </button>
+        </div>
+      </div>
+
+      <div class="shop_item">
+        <img src="Student-1/bp2.webp" alt="Shoes">
+        <span class="item_name">Shoes</span>
+        <span class="item_price">LKR 10000.00</span>
+        <div class="price_Container">
+          <label class="quantity">Quantity
+            <input id="5_quantity" type="number" min="1" max="10" value="1">
+          </label>
+          <button id="5_item" data-itemname="Shoes" data-price="10000" class="add_to_cart" onclick="AddToCart(this.id)">
+            <span>Add to cart</span>
+            <i class="S_icon" style="vertical-align: middle;"></i>
+          </button>
+        </div>
+      </div>
+
+      <div class="shop_item">
+        <img src="Student-1/tshirt.webp" alt="T-Shirt">
+        <span class="item_name">T-Shirt</span>
+        <span class="item_price">LKR 4000.00</span>
+        <div class="price_Container">
+          <label class="quantity">Quantity
+            <input id="6_quantity" type="number" min="1" max="10" value="1">
+          </label>
+          <button id="6_item" data-itemname="T-Shirt" data-price="4000" class="add_to_cart" onclick="AddToCart(this.id)">
+            <span>Add to cart</span>
+            <i class="S_icon" style="vertical-align: middle;"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>
+<div id="bgpic">
+  <section id="checkout-popout" class="d-none">
+            <span class="checkout-close pointer text-danger" onclick="closecheckout()">
+            <img src="Student-1/close.png" alt="close">
+            </span>
+
+    <div id="order">
+      <h2 class="orderhead">Your Order</h2>
+      <table id="table">
+        <thead>
+        <tr>
+          <th>Product</th>
+          <th class="text-right">Price</th>
+        </tr>
+        </thead>
+        <tbody id="cart">
+        <tr>
+          <th>Total</th>
+          <td id="totalOrder">0 LKR</td>
+        </tr>
+        </tbody>
+      </table>
+      <br>
+      <button class="placeOrder" onclick="location.href='#orderSummary'">Place the Order</button><br>
+      <button class="cancelOrder" onclick="closecheckout()">Cancel the Order</button>
+
+      <div id="orderSummary">
+        <h2 class="summaryheader">Order Summary</h2>
+        <label for="language"></label>
+        <select id="language" name="language">
+          <option value="Eng">English</option>
+          <option value="sin">Sinhala</option>
+          <option value="china">Chinese</option>
+        </select><br>
+        <div class="container">
+
+          <form action="">
+
+            <div class="row">
+
+              <div class="col">
+
+                <h3 class="title">Billing Address</h3><br>
+
+                <div class="inputBox">
+                  <span>Full Name :</span>
+                  <input type="text" placeholder="amelia aria">
+                </div>
+                <div class="inputBox">
+                  <span>Email :</span>
+                  <input type="email" placeholder="example@example.com">
+                </div>
+                <div class="inputBox">
+                  <span>Address :</span>
+                  <input type="text" placeholder="room - street - locality">
+                </div>
+                <div class="inputBox">
+                  <span>City :</span>
+                  <input type="text" placeholder="colombo">
+                </div>
+
+                <div class="flex">
+                  <div class="inputBox">
+                    <span>State :</span>
+                    <input type="text" placeholder="sri lanka">
+                  </div>
+                  <div class="inputBox">
+                    <span>Zip Code :</span>
+                    <input type="text" placeholder="123 456">
+                  </div>
+                </div>
+
+              </div>
+
+              <div class="col">
+
+                <h3 class="title">Payment</h3><br>
+
+                <div class="inputBox">
+                  <span>Cards accepted :</span>
+                  <img src="Student-1/card_img.png" alt="card">
+                </div>
+                <div class="inputBox">
+                  <span>Name on card :</span>
+                  <input type="text" placeholder="ms.amelia aria">
+                </div>
+                <div class="inputBox">
+                  <span>Credit card number :</span>
+                  <input type="number" placeholder="1111-2222-3333-4444">
+                </div>
+                <div class="inputBox">
+                  <span>Expired month :</span>
+                  <input type="text" placeholder="march">
+                </div>
+
+                <div class="flex">
+                  <div class="inputBox">
+                    <span>Expired year :</span>
+                    <input type="number" placeholder="2023">
+                  </div>
+                  <div class="inputBox">
+                    <span>CVV :</span>
+                    <input type="text" placeholder="1234">
+                  </div>
+                </div>
+
+              </div>
+
+            </div>
+
+            <input type="submit" value="Pay Now" class="submit-btn">
+
+          </form>
+
+        </div>
+
+
+
+
+      </div>
+    </div>
+
+</div>
+</section>
+<!---footer--->
+<footer>
+  <p>&copy; 2023 SportsHub. All rights reserved.</p>
+  <ul>
+    <li><a href="PageEditor_student1.html">Content Page</a></li>
+
+  </ul>
+</footer>
+
+<!---footer--->
+</div>
+
+
+
+</body>
+</html>
